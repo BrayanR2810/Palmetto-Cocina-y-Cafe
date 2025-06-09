@@ -33,7 +33,3 @@ mongoose.connect(process.env.MONGO_URI)
   })
   .catch(err => console.error('Error en conexión MongoDB', err));
 
-app.get("/", (req, res) => {
-  res.send("Backend de Palmetto Cocina & Café corriendo correctamente.");
-});
-
